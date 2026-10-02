@@ -7,6 +7,7 @@
 <meta name="description" content="Escola de Futebol Francis IAFA, em Blumenau/SC. Conheça nossa história, categorias, horários, competições, resultados, galeria e contatos.">
 <meta name="keywords" content="Francis IAFA, escola de futebol, Blumenau, futebol de base, futsal, escolinha de futebol, futebol infantil">
 <meta name="author" content="Escola de Futebol Francis IAFA">
+<link rel="icon" type="image/jpeg" href="logo-iafa.jfif">
 <meta property="og:title" content="Escola de Futebol Francis IAFA | Blumenau - SC">
 <meta property="og:description" content="Formando atletas. Construindo histórias. Desde 2010.">
 <meta property="og:type" content="website">
@@ -95,15 +96,22 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
 .floating-wa{position:fixed;right:20px;bottom:20px;z-index:30;background:#128c7e;color:#fff;text-decoration:none;font-weight:900;padding:13px 17px;border-radius:30px;box-shadow:0 8px 25px rgba(0,0,0,.2)}
 .menu-toggle{display:none;background:none;border:1px solid rgba(255,255,255,.3);color:#fff;border-radius:5px;padding:8px 10px;font-size:18px}
 .badge{display:inline-block;background:var(--yellow);color:#10212a;padding:6px 10px;border-radius:4px;font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:.8px;margin-bottom:10px}
+
+.hero-stats{display:flex;gap:12px;margin-top:30px;max-width:570px}.hero-stats div{min-width:130px;padding:15px 18px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.15);border-radius:8px;backdrop-filter:blur(5px)}.hero-stats strong{display:block;color:var(--yellow);font-size:26px;line-height:1}.hero-stats span{display:block;color:#d9e4e7;font-size:12px;text-transform:uppercase;letter-spacing:1px;margin-top:5px}
+.timeline-section{background:#fff}.timeline{margin-top:38px;display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.timeline-item{border-top:4px solid var(--yellow);background:var(--light);padding:24px;border-radius:0 0 10px 10px}.timeline-item>span{font-size:12px;font-weight:900;color:var(--blue);letter-spacing:1px}.timeline-item h3{color:var(--navy);margin:8px 0}.timeline-item p{color:var(--muted);font-size:14px}
+.competition-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:36px}.competition-card{border:1px solid var(--line);border-radius:10px;padding:22px;background:#fff;transition:transform .2s,box-shadow .2s}.competition-card:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(6,29,40,.08)}.competition-card>span{display:inline-block;font-weight:900;color:var(--blue);font-size:12px}.competition-card h3{font-size:18px;color:var(--navy);margin:6px 0}.competition-card p{font-size:13px;color:var(--muted)}
+.news-cta{margin-top:28px;padding:22px 24px;border-radius:10px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:space-between;gap:20px}.news-cta strong{display:block;font-size:18px}.news-cta span{display:block;color:#b9c9ce;font-size:14px;margin-top:3px}.news-cta .btn{margin:0}
+.gallery img{cursor:pointer;transition:transform .2s,filter .2s}.gallery img:hover{transform:scale(1.015);filter:brightness(.92)}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.88);display:none;align-items:center;justify-content:center;padding:30px;z-index:100}.lightbox.open{display:flex}.lightbox img{max-width:min(1100px,94vw);max-height:88vh;object-fit:contain;border-radius:6px}.lightbox-close{position:absolute;top:18px;right:24px;border:0;background:transparent;color:#fff;font-size:42px;line-height:1;cursor:pointer}.back-top{position:fixed;right:20px;bottom:75px;width:42px;height:42px;border-radius:50%;border:0;background:var(--navy);color:#fff;font-size:20px;font-weight:900;z-index:29;display:none;cursor:pointer;box-shadow:0 5px 18px rgba(0,0,0,.2)}.back-top.show{display:block}
 @media(max-width:900px){
  nav{display:none}.menu-toggle{display:block}.two{grid-template-columns:1fr}.values{grid-template-columns:repeat(2,1fr)}
- .cat-grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr}.schedule-grid{grid-template-columns:1fr}.news-grid{grid-template-columns:1fr}.location-box{grid-template-columns:1fr}
+ .cat-grid{grid-template-columns:repeat(3,1fr)}.cards{grid-template-columns:1fr}.schedule-grid{grid-template-columns:1fr}.news-grid{grid-template-columns:1fr}.location-box{grid-template-columns:1fr}.timeline{grid-template-columns:repeat(2,1fr)}.competition-grid{grid-template-columns:repeat(2,1fr)}.news-cta{align-items:flex-start;flex-direction:column}
  header.mobile-open nav{display:flex;position:absolute;left:0;right:0;top:84px;background:var(--navy);padding:18px 22px;flex-direction:column;align-items:flex-start;gap:15px;box-shadow:0 12px 20px rgba(0,0,0,.18)}
 }
 @media(max-width:600px){
  .values{grid-template-columns:1fr}.cat-grid{grid-template-columns:repeat(2,1fr)}
  .gallery{grid-template-columns:1fr}.gallery .big{grid-column:auto}
- .hero{min-height:620px}.footer-inner{flex-direction:column}
+ .hero{min-height:620px}.footer-inner{flex-direction:column}.hero-stats{display:grid;grid-template-columns:repeat(3,1fr)}.hero-stats div{min-width:0;padding:12px}.hero-stats strong{font-size:22px}.hero-stats span{font-size:10px}.timeline{grid-template-columns:1fr}.competition-grid{grid-template-columns:1fr 1fr}
 }
 </style>
 </head>
@@ -134,6 +142,11 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
     <a class="btn" href="#historia">Conheça a IAFA</a>
     <a class="btn alt" href="#contato">Entre em contato</a>
     <div class="social-row"><span class="badge">Blumenau · SC</span><span class="badge">Desde 2010</span><span class="badge">Futebol + Futsal</span></div>
+    <div class="hero-stats">
+      <div><strong>2010</strong><span>Fundação</span></div>
+      <div><strong>10</strong><span>Categorias</span></div>
+      <div><strong>2</strong><span>Modalidades</span></div>
+    </div>
   </div>
 </section>
 
@@ -150,6 +163,20 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
       <strong>2010</strong>
       <h3>O começo de uma história que continua.</h3>
       <p>O trabalho iniciado por Francis segue através de cada treino, cada jogo, cada equipe e cada criança que encontra no futebol uma oportunidade de aprender e crescer.</p>
+    </div>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <div class="container">
+    <div class="tag dark">Nossa trajetória</div>
+    <h2>Uma história em movimento.</h2>
+    <p class="lead">A IAFA segue construindo sua trajetória através do trabalho diário, das equipes e das experiências vividas dentro e fora de campo.</p>
+    <div class="timeline">
+      <div class="timeline-item"><span>2010</span><div><h3>Fundação da IAFA</h3><p>Início do projeto de formação esportiva criado por Francis.</p></div></div>
+      <div class="timeline-item"><span>FORMAÇÃO</span><div><h3>Futebol e futsal de base</h3><p>Desenvolvimento de crianças e adolescentes em diferentes etapas de formação.</p></div></div>
+      <div class="timeline-item"><span>COMPETIÇÃO</span><div><h3>Experiência em torneios</h3><p>Participação em competições regionais e nacionais como parte da formação esportiva.</p></div></div>
+      <div class="timeline-item"><span>LEGADO</span><div><h3>Uma história que continua</h3><p>A escola preserva a identidade construída por Francis e segue formando novas gerações.</p></div></div>
     </div>
   </div>
 </section>
@@ -174,6 +201,18 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
     <div class="tag dark">Categorias e horários</div>
     <h2>Encontre o horário da sua categoria.</h2>
     <p class="lead">Confira os horários oficiais dos grupos da Francis IAFA para 2026. A programação está organizada por modalidade, nível e ano de nascimento.</p>
+    <div class="cat-grid category-list">
+      <div class="cat">Sub-07<small>2019 / 2020</small></div>
+      <div class="cat">Sub-08<small>2018</small></div>
+      <div class="cat">Sub-09<small>2017 / 2018</small></div>
+      <div class="cat">Sub-10<small>2016</small></div>
+      <div class="cat">Sub-11<small>2015</small></div>
+      <div class="cat">Sub-12<small>2014</small></div>
+      <div class="cat">Sub-13<small>2013</small></div>
+      <div class="cat">Sub-14<small>2012</small></div>
+      <div class="cat">Sub-15<small>2011</small></div>
+      <div class="cat">Sub-16<small>2010</small></div>
+    </div>
 
     <div class="schedule-block">
       <div class="schedule-head">
@@ -266,11 +305,17 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
     <div class="tag dark">Competições</div>
     <h2>Representando a IAFA dentro de campo.</h2>
     <p class="lead">A participação em torneios faz parte da trajetória das equipes, proporcionando experiências esportivas, desafios e convivência com diferentes escolas e clubes.</p>
-    <div class="comps">
-      <span class="comp">Copa ACEF</span><span class="comp">Copa LDF</span><span class="comp">Copa Segalas</span>
-      <span class="comp">Copa São Ludgero</span><span class="comp">Brasil Cup</span><span class="comp">Copa Germânica</span>
-      <span class="comp">Copa Norte</span><span class="comp">Copa Pro Sul</span><span class="comp">Copa Kids</span>
-      <span class="comp">Copa Pomerode</span>
+    <div class="competition-grid">
+      <div class="competition-card"><span>01</span><h3>Copa ACEF</h3><p>Competições de base com diferentes categorias e fases.</p></div>
+      <div class="competition-card"><span>02</span><h3>Copa LDF</h3><p>Experiência competitiva ao longo da temporada.</p></div>
+      <div class="competition-card"><span>03</span><h3>Copa Segalas</h3><p>Participação das equipes Francis IAFA em categorias de base.</p></div>
+      <div class="competition-card"><span>04</span><h3>Copa São Ludgero</h3><p>Uma das competições de destaque no calendário da escola.</p></div>
+      <div class="competition-card"><span>05</span><h3>Brasil Cup</h3><p>Experiência competitiva em âmbito interestadual.</p></div>
+      <div class="competition-card"><span>06</span><h3>Copa Germânica</h3><p>Participação em futebol e futsal de base.</p></div>
+      <div class="competition-card"><span>07</span><h3>Copa Norte</h3><p>Competições regionais e confrontos entre escolas.</p></div>
+      <div class="competition-card"><span>08</span><h3>Copa Pro Sul</h3><p>Mais experiências de jogo para as categorias.</p></div>
+      <div class="competition-card"><span>09</span><h3>Copa Kids</h3><p>Festival competitivo voltado às categorias de base.</p></div>
+      <div class="competition-card"><span>10</span><h3>Copa Pomerode</h3><p>Participação regional das equipes Francis IAFA.</p></div>
     </div>
   </div>
 </section>
@@ -301,6 +346,7 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
       </article>
     </div>
     <p class="source-note">Resultados conferidos em fontes públicas das competições. A seção pode receber novas notícias, fotos e resultados conforme a temporada avança.</p>
+    <div class="news-cta"><div><strong>Quer acompanhar as atualizações da IAFA?</strong><span>Confira também os conteúdos publicados no Instagram oficial.</span></div><a class="btn" href="https://www.instagram.com/francis.iafa/" target="_blank" rel="noopener">Ver Instagram</a></div>
   </div>
 </section>
 
@@ -316,7 +362,7 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
   <div class="container">
     <div class="tag dark">Momentos IAFA</div>
     <h2>Dentro e fora de campo.</h2>
-    <p class="lead">Treinos, competições, equipes e momentos que fazem parte da nossa história.</p>
+    <p class="lead">Treinos, competições, equipes e momentos que fazem parte da nossa história. Clique em uma foto para ampliar.</p>
     <div class="gallery">
       <img class="big" src="fotos/equipe-sub10.jpeg" alt="Equipe IAFA em campo">
       <img src="fotos/equipe-campo-2.jpeg" alt="Equipe IAFA">
@@ -373,5 +419,19 @@ footer{background:#031017;color:#aebbc0;padding:38px 22px}
   </div>
 </footer>
 <a class="floating-wa" href="https://wa.me/5547999678848" target="_blank" rel="noopener" aria-label="Falar com a IAFA pelo WhatsApp">WhatsApp</a>
+<button class="back-top" id="backTop" aria-label="Voltar ao topo">↑</button>
+<div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" aria-label="Fechar">×</button><img id="lightboxImg" src="" alt=""></div>
+<script>
+const header=document.querySelector('header');
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>header.classList.remove('mobile-open')));
+const backTop=document.getElementById('backTop');
+window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>500));
+backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+const lightbox=document.getElementById('lightbox'), lightboxImg=document.getElementById('lightboxImg');
+document.querySelectorAll('.gallery img').forEach(img=>img.addEventListener('click',()=>{lightboxImg.src=img.src;lightboxImg.alt=img.alt;lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false')}));
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightboxImg.src=''}
+lightbox.addEventListener('click',e=>{if(e.target===lightbox||e.target.classList.contains('lightbox-close'))closeLightbox()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+</script>
 </body>
 </html>
